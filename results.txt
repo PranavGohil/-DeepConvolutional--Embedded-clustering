@@ -1,0 +1,29 @@
+Simple model where we removed one layer prior to latent space acc = 0.5940, nmi = 0.6175, ari = 0.4794 mnist
+
+Model where we can also try to increase the latent space side(100)  acc = 0.5587, nmi = 0.5374, ari = 0.4053
+
+Model where we can increase the participation of the clustering loss(0.5) acc = 0.8889, nmi = 0.8864, ari = 0.8510
+
+Model where we can increase the participation of the clustering loss(1) acc = 0.8889, nmi = 0.8864, ari = 0.8510
+
+Model where we can just try to use normal MLP instead of the convlutional layer
+
+model where we can add one more layer in the model
+
+model where we can use max pooling in the place of the dialtion kernel  -->
+Epoch 200/200 
+ 274/274 [==============================] - 100s 364ms/step - loss: 0.0082
+
+ acc = 0.8938, nmi = 0.8935, ari = 0.8567
+
+
+Iter 5180 : Acc 0.8921 , nmi 0.88991 , ari 0.85426 ; loss= [7.37649 0.07326 0.05021] when gamaa is higher than 0.1 --> 1
+Iter 1260 : Acc 0.88693 , nmi 0.88104 , ari 0.84648 ; loss= [0.10877 0.1716  0.02246] when gamma is 0.1
+Iter 4060 : Acc 0.88801 , nmi 0.88532 , ari 0.84944 ; loss= [0.06322 0.0881  0.01917]
+Iter 5180 : Acc 0.88774 , nmi 0.88537 , ari 0.84958 ; loss= [0.05869 0.08216 0.01761]
+loss becomes more for autoencoder but accuracy does not change much I think the reason is because data is simple enough so that 
+a model can easily extract the true representation with higher loss.
+Accuracy is decided on clustering basis not on reconstruction basis
+
+
+
